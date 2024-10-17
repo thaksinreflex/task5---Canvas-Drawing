@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Phearom Rayha Angkor flower </title>
+</head>
+<body>
+<h1>Canvas Drawing</h1>
+<canvas id="myCanvas" width="200" height="200" style="border:1px solid #175aa7;"></canvas>
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Draw a rectangle
+    ctx.fillStyle = "red"; // Set the fill color for the rectangle
+    ctx.fillRect(50, 50, 100, 100); // Draw the rectangle at (50, 50) with a width and height of 100
+
+    // Draw a circle
+    ctx.fillStyle = "green"; // Set the fill color for the circle
+    ctx.beginPath(); // Start a new path for the circle
+    ctx.arc(100, 100, 40, 0, 2 * Math.PI); // Draw the circle at (100, 100) with a radius of 40
+    ctx.fill(); // Fill the circle with the fill color
+    ctx.stroke(); // Optional: draw the outline of the circle
+</script>
+</body>
+</html>
